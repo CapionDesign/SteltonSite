@@ -1,0 +1,81 @@
+/* Custom CSS */
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* PARALLAX VENDOR CSS */
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+.sec03 {
+    background-color: yellow;
+}
+
+.sec04 {
+    background-color: blue;
+}
+
+.position01 {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.centerHeader {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.headTextMed {
+    color: white;
+    font-weight: 700;
+}
+
+.headTextLarge {
+    color: white;
+    font-weight: 900;
+}
+
+.parallaxSection {
+    width: 100vw;
+    height: 20vh;
+}
+
+.lineDivider {
+    max-width: 60vw;
+}
+
+
+
+.aboutBG {
+    margin-top: 10vh;
+    background-color: darkred;
+    height: 35vh;
+    width: 100vw;
+}
+
+footer {
+    background-color: lightgray;
+}
+.marginTop {
+    margin-top: 5vh;
+}
+
+
+
+.redBG {
+    background-color: darkred;
+    height: 50vh;
+}
