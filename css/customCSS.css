@@ -8,7 +8,7 @@
 /* PARALLAX VENDOR CSS */
 
 .parallax-window {
-    min-height: 400px;
+    height: 30vh;
     background: transparent;
 }
 
@@ -58,7 +58,6 @@
 }
 
 
-
 .aboutBG {
     margin-top: 10vh;
     background-color: darkred;
@@ -69,13 +68,12 @@
 footer {
     background-color: lightgray;
 }
+
 .marginTop {
     margin-top: 5vh;
 }
 
-
-
 .redBG {
     background-color: darkred;
-    height: 50vh;
+    height: 40vh;
 }
