@@ -1,141 +1,206 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
-<head>
 
+    <head>
+        
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="This site is an exam project made by group 4 of 2nd semester at KEA - Multimediadesigner" content="">
-    <meta name="Group04" content="">
+    <meta name="This site is made by a group of multimediadesign students for the 2nd semester exam. The site fokuses on Stelton and their design line Emma, and is to function as a campaign site." content="">
+    <meta name="Martin Capion" content="">
 
-    <title>Emma KampagneSite</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/customCSS.css" rel="stylesheet">
+    <title>Emma Kampagne Site</title>
     
-    <!-- LATO Font (Reg, Thin & Bold) -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-
-
-</head>
-
-<body>
-
-    <!-- Nav -->
-<div class="navbar navbar-default navbar-fixed-top">
-<div class="container-fluid">
-<div class="navbar-header">
-    <a class="navbar-brand" href="#landing">Brand</a>
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-    </button>
-</div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-          <li><a href="#landing">Home</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#about">About </a></li>
-      </ul>
-</div>
-</div>
-</div>
-    
-    
-    <!-- Landing Section -->
-    <section id="landing" class="landingSection section">
-        <div class="container-fluid">
-        <div class="row">
-        <div class="col-lg-12">
-            
-        <div class="container centerHeader">
-        <div class="col-md-8 col-md-offset-2">
-            <h1 class="headTextMed text-center id="fittext1>STELTONS</h1>
-            <hr>
-            <h1 class="headTextLarge text-center id="fittext1>EMMA</h1>
-        </div>
-        </div>
-                
-        <img class="img-responsive" src="imgs/EmmaGr%C3%A5Kande.jpg">
-            
-        <a href="#pitch">
-          <span class="glyphicon glyphicon-menu-down position01"></span>
-        </a>
-        </div>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
         
-        </div>
-        </div>
-    </section>
+    <link rel="stylesheet" href="bower_components/flickity/dist/flickity.min.css">
+        
+    <link rel="stylesheet" href="assets/css/main.css">
     
- 
-    <!-- Sales Pitch Parallax Section -->
+    </head>    
     
-    <div class="parallax-window" data-parallax="scroll" data-image-src="imgs/emma.jpg"></div>
-    
-    <section id="pitch" class="pitchSection parallaxSection">
-        <div class="container parallax-window" data-parallax="scroll">
-        <div class="row redBG">
-        <div class="col-lg-8">
-
-        <h4 id="fittext2" class="headTextMed text-center marginTop">"SKANDINAVISK DESIGN AF HØJ KVALITET"</h4>
-        <hr class="lineDivider">
-
-        </div>
-        </div>
-        </div>
-    </section>
-    
-    
-    <!-- Product Showcase Section -->
-    <section id="products" class="productsSection section sec03">
-        <div class="container-fluid">
-        <div class="row">
-        <div class="col-lg-12">
+    <body>
+        
+        <header>
+            <!-- Slide Menu -->
+            <nav class="offcanvas">
+                <a href="#Produkter"></a>
+                <a href="#Awards"></a>
+                <a href="#About"></a>
+                <a href="#Shop"></a>
+            </nav>
             
-        </div>
-        </div>
-        </div>
-    </section>
-    
-    
-    <!-- About Emma Line & The Designers Section -->
-    <section id="about" class="aboutSection section">
-        <p>THIS IS EMMA</p>
-    </section>
-    
-    <footer>
-        <p class="text-center">COPYRIGHT &copy; 2016</p>
-    </footer>
-    
-    
-    
-    
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+            <!-- Navbar -->
+            <div class="container-fluid">
+                <nav class="navbar navbar-default">
+                    <div class="pull-xs-left">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    
-    <!-- Parallax -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="vendor/Parallax/parallax.js"></script>
-    
-    <!-- FitText -->
-    <script src="vendor/FitText/jquery.fittext.js"></script>
-    <script type="text/javascript">
-		$("#fittext1").fitText();
-		$("#fittext2").fitText(2.5);
-		$("#fittext3").fitText(1.1, { minFontSize: '20px', maxFontSize: '35px' });
-	</script>
-    
-    <!-- Owl Carousel-->
+                    <div class="center-block">
+                        <a class="navbar-brand" href="#">
+                            <img alt="Brand" src="...">
+                        </a>
+                    </div>
+                    
+                    <div class="pull-xs-right">
+                        <a href="#"> <!-- INSERT SHOP GLYPHICON HERE --> </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- Landing -->
+        <section class="landing">
+            <video autoplay loop muted>
+                <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+            
+            <div class="container">
+                <div class="center-block">
+                    <p>TEXT</p>
+                    
+                    <a href="#"> <!-- INSERT DOWN ARROW GLYPHICON HERE --> </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pitch -->
+        <section class="pitch">
+            <p class="text-center">PITCH</p>
+        </section>
+        
+        <!-- Products -->
+        <section class="products">
+            <div class="container">
+                <h2>Produkter</h2>
+                
+                <div class=" js-flickity">
+                    <div class="carousel-cell">
+                        <div class="card">
+                          <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                          </div>
+                          <img data-src="..." alt="Card image">
+                          <div class="card-block">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="card">
+                          <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                          </div>
+                          <img data-src="..." alt="Card image">
+                          <div class="card-block">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="card">
+                          <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                          </div>
+                          <img data-src="..." alt="Card image">
+                          <div class="card-block">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="card">
+                          <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                          </div>
+                          <img data-src="..." alt="Card image">
+                          <div class="card-block">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Awards -->
+        <section class="awards">
+            <div class="container">
+                JEG HAR INFORAFIK OP I MIG
+            </div>
+        </section>
+        
+        <!-- About -->
+        <section class="about">
+            <div class="container">
+                <h2 class="text-center">ABOUT SHIZZLE</h2>
+                <div class="row">
+                
+                <!-- ABOUT EMMA-->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-xs-7">
+                               <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p> 
+                            </div>
+                            
+                            <div class="col-xs-5">
+                                <img src="http://placehold.it/300x300" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                <!-- ABOUT DESIGNERS OF EMMA-->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <img src="http://placehold.it/300x300" alt="">
+                            </div>
 
-</body>
+                            <div class="col-xs-7">
+                                <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <footer>
+            <div class="container">
+                <p>COPYRIGHT C 2016</p>
+            </div>
+        </footer>
+        
+        
+        <!-- Vendor -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        <script src="bower_components/flickity/dist/flickity.pkgd.min.js"></script>
+        
+        <script src="bower_components/hammerjs/hammer.min.js"></script>
+        
+        <script src="assets/js/main.js"></script>
+    
+        
+    </body>
 
 </html>

@@ -1,0 +1,22 @@
+{
+  "name": "SteltonSite",
+  "homepage": "https://github.com/CapionDesign/SteltonSite",
+  "authors": [
+    "Martin Capion <MartinCapion@Gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "hammerjs": "hammer.js#^2.0.8",
+    "flickity": "^1.2.1"
+  }
+}
