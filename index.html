@@ -4,7 +4,7 @@
 
 
     <head>
-        
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,84 +12,82 @@
     <meta name="Martin Capion" content="">
 
     <title>Emma Kampagne Site</title>
-    
+
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        
+
     <link rel="stylesheet" href="bower_components/flickity/dist/flickity.min.css">
-        
+
     <link rel="stylesheet" href="assets/css/main.css">
-    
-    </head>    
-    
+
+    </head>
+
     <body>
-        
-        <header>
+
+        <header id="header">
             <!-- Slide Menu -->
             <nav class="offcanvas">
-                <a href="#Produkter"></a>
-                <a href="#Awards"></a>
-                <a href="#About"></a>
-                <a href="#Shop"></a>
+                <a href="#Produkter">menu point 1</a>
+                <a href="#Awards">menu point 2</a>
+                <a href="#About">menu point 3</a>
+                <a href="#Shop">menu point 4</a>
             </nav>
-            
-            <!-- Navbar -->
-            <div class="container-fluid">
-                <nav class="navbar navbar-default">
-                    <div class="pull-xs-left">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
 
-                    <div class="center-block">
-                        <a class="navbar-brand" href="#">
-                            <img alt="Brand" src="...">
-                        </a>
-                    </div>
-                    
-                    <div class="pull-xs-right">
-                        <a href="#"> <!-- INSERT SHOP GLYPHICON HERE --> </a>
-                    </div>
-                </nav>
-            </div>
+            <!-- Navbar -->
+            <nav class="navbar navbar-default">
+                <div class="pull-xs-left">
+                    <button type="button" class="menu-toggle" data-toggle="class" data-toggle-class="has-shown-menu" data-target="#header">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="text-xs-center">
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="...">
+                    </a>
+                </div>
+
+                <div class="pull-xs-right">
+                    <a href="#"> <!-- INSERT SHOP GLYPHICON HERE --> </a>
+                </div>
+            </nav>
         </header>
-        
+
         <!-- Landing -->
         <section class="landing">
             <video autoplay loop muted>
-                <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                <source src="http://www.html5rocks.com/en/tutorials/video/basics/devstories.webm" type="video/webm">
             </video>
-            
+
             <div class="container">
                 <div class="center-block">
                     <p>TEXT</p>
-                    
+
                     <a href="#"> <!-- INSERT DOWN ARROW GLYPHICON HERE --> </a>
                 </div>
             </div>
         </section>
-        
+
         <!-- Pitch -->
         <section class="pitch">
-            <p class="text-center">PITCH</p>
+            <p class="text-xs-center">PITCH</p>
         </section>
-        
+
         <!-- Products -->
-        <section class="products">
+        <section class="products is-swipable">
             <div class="container">
-                <h2>Produkter</h2>
-                
-                <div class=" js-flickity">
+                <h2 class="text-xs-center">Produkter</h2>
+
+                <div class="js-flickity" data-flickity-options='{"imagesLoaded": true, "pageDots": false}'>
                     <div class="carousel-cell">
                         <div class="card">
                           <div class="card-block">
                             <h4 class="card-title">Card title</h4>
                             <h6 class="card-subtitle text-muted">Support card subtitle</h6>
                           </div>
-                          <img data-src="..." alt="Card image">
+                          <img src="assets\images\LS_x-200-1_Emma_coffee_grey.jpg" class="img-fluid" alt="Card image">
                           <div class="card-block">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -102,7 +100,7 @@
                             <h4 class="card-title">Card title</h4>
                             <h6 class="card-subtitle text-muted">Support card subtitle</h6>
                           </div>
-                          <img data-src="..." alt="Card image">
+                          <img src="assets\images\LS_x-200-x-205_Emma_skyline.jpg" class="img-fluid" alt="Card image">
                           <div class="card-block">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -115,7 +113,7 @@
                             <h4 class="card-title">Card title</h4>
                             <h6 class="card-subtitle text-muted">Support card subtitle</h6>
                           </div>
-                          <img data-src="..." alt="Card image">
+                          <img src="assets\images\LS_x-200-x-205_Emma.jpg" class="img-fluid" alt="Card image">
                           <div class="card-block">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -128,7 +126,7 @@
                             <h4 class="card-title">Card title</h4>
                             <h6 class="card-subtitle text-muted">Support card subtitle</h6>
                           </div>
-                          <img data-src="..." alt="Card image">
+                          <img src="assets\images\LS_x-204-1_Emma_termo_cup_grey.jpg" class="img-fluid" alt="Card image">
                           <div class="card-block">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -138,69 +136,67 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Awards -->
         <section class="awards">
             <div class="container">
                 JEG HAR INFORAFIK OP I MIG
             </div>
         </section>
-        
+
         <!-- About -->
         <section class="about">
             <div class="container">
-                <h2 class="text-center">ABOUT SHIZZLE</h2>
+                <h2 class="text-xs-center">Om EMMA og linjens designere</h2>
                 <div class="row">
-                
-                <!-- ABOUT EMMA-->
-                    <div class="col-xs-12 col-lg-6">
-                        <div class="row">
-                            <div class="col-xs-7">
-                               <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p> 
-                            </div>
-                            
-                            <div class="col-xs-5">
-                                <img src="http://placehold.it/300x300" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    
-                <!-- ABOUT DESIGNERS OF EMMA-->
-                    <div class="col-xs-12 col-lg-6">
-                        <div class="row">
-                            <div class="col-xs-5">
-                                <img src="http://placehold.it/300x300" alt="">
-                            </div>
 
-                            <div class="col-xs-7">
-                                <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
-                            </div>
+                <!-- ABOUT EMMA-->
+                  <div class="col-xs-12 col-lg-6">
+                      <div class="row">
+                        <div class="col-xs-12 col-lg-6">
+                            <img class="img-fluid" src="http://placehold.it/300x300" alt="">
                         </div>
-                    </div>
+                          <div class="col-xs-12 col-lg-6">
+                             <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+                          </div>
+                      </div>
+                  </div>
+
+                <!-- ABOUT DESIGNERS OF EMMA-->
+                  <div class="col-xs-12 col-lg-6">
+                      <div class="row">
+                        <div class="col-xs-12 col-lg-6">
+                            <img class="img-fluid" src="http://placehold.it/300x300" alt="">
+                        </div>
+                          <div class="col-xs-12 col-lg-6">
+                             <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+                          </div>
+                      </div>
+                  </div>
                 </div>
             </div>
         </section>
-        
-        
+
+
         <footer>
             <div class="container">
                 <p>COPYRIGHT C 2016</p>
             </div>
         </footer>
-        
-        
+
+
         <!-- Vendor -->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        
+
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        
+
         <script src="bower_components/flickity/dist/flickity.pkgd.min.js"></script>
-        
+
         <script src="bower_components/hammerjs/hammer.min.js"></script>
-        
+
         <script src="assets/js/main.js"></script>
-    
-        
+
+
     </body>
 
 </html>
