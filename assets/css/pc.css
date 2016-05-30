@@ -1,0 +1,12 @@
+@media (min-width: 1024px) {
+
+    .navbar-brand>img {
+        width: 300px;
+        padding-top: 20px;
+        float: right;
+        margin-right: 50px;
+      
+        
+    }
+
+}
