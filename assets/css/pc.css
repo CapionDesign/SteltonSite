@@ -1,5 +1,4 @@
 @media (min-width: 1024px) {
-    
     * {
   box-sizing: border-box;
 }
@@ -7,6 +6,8 @@
 html, body {
   margin: 0;
   padding: 0;
+    overflow-x: hidden;
+    background-color: #f0f0f0;
 }
 
 body {
@@ -45,13 +46,14 @@ header .offcanvas {
   height: 100vh;
   width: 20vw;
   transform: translateX(-100%);
-  background-color: #FFF;
+  background-color: #f0f0f0;
   z-index: 2;
 }    
 
 header .offcanvas a {
   display: block;
-  padding: 15px 20px;
+  padding: 15px 40px;
+  text-align: center;
 }
 
 header.has-shown-menu {
@@ -108,7 +110,8 @@ section {
 }
 
 .pitch {
-  background-color: red;
+  background-color: #8b161a;
+  height: 300px;
 }
 
 .pitch p {
@@ -117,7 +120,7 @@ section {
 }
 
 .awards{
-  background-color: red;  
+  background-color: #8b161a;  
 }
     
     .awards p{
@@ -126,11 +129,15 @@ color: #FFF;
     
 }
     
+p {
+    font-family: "Lato";
+}    
+
 .omemmaen{
-  background-color: red;  
+  background-color: #8b161a;  
 }
     
-    .omemmaen p{
+.omemmaen p{
 color: #FFF;
   padding: 20px 0;
     
@@ -149,7 +156,7 @@ color: #FFF;
   width: 60px;
   display: block;
   margin-bottom: 10px;
-  background-color: red;
+  background-color: #8b161a;
   transform: none;
   transition: all 0.4s ease;
 }
@@ -164,15 +171,46 @@ color: #FFF;
 }
 
 
-
+    .menulogo {
+       width: 250px;
+       padding-left: 47px;
+       padding-top: 15px;
+        align-content: center;
+       
+    }
 
     .navbar-brand>img {
         width: 300px;
         padding-top: 20px;
         float: right;
         margin-right: 50px;
-      
         
     }
-
+    .card {
+        background-color: #f0f0f0;
+    }
+    
+    .rykned {
+        padding-top: 40px;
+    }
+        
+        
+    }
+    
+    .some1 {
+        width: 50px;
+        margin-left: -170px;
+        position: absolute;
+        bottom: 3px;
+        
+        
+    }
+    
+    .some2 {
+        width: 50px;
+        margin-left: -100px;
+        position: absolute;
+        bottom: 0;
+        
+    }
 }
