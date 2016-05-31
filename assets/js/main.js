@@ -30,7 +30,7 @@ $(document).ready(function () {
 
     $("#infografik").load("desktop.svg", function () {
         $("#box1").hide();
-        $("#box2").hide();
+        $(".box2").hide();
         $("#box3").hide();
 
         $("#punkt01").hover(
@@ -43,10 +43,10 @@ $(document).ready(function () {
         );
         $("#punkt02").hover(
             function () {
-                $("#box2").fadeIn(100);
+                $(".box2").fadeIn(100);
             },
             function () {
-                $("#box2").fadeOut(100);
+                $(".box2").fadeOut(100);
             }
         );
         $("#punkt03").hover(
