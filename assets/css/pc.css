@@ -1,158 +1,158 @@
-@media (min-width: 769px) {
-    * {
-        box-sizing: border-box;
+    @media (min-width: 1024px) {
+        * {
+            box-sizing: border-box;
+        }
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #f0f0f0;
+        }
+        body {
+            width: 100vw;
+            margin: 0;
+        }
+        header {
+            transition: all 0.4s ease;
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99;
+        }
+        header:after {
+            content: " ";
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #000;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.4s ease;
+        }
+        header .offcanvas {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100vh;
+            width: 20vw;
+            transform: translateX(-100%);
+            background-color: #f0f0f0;
+            z-index: 2;
+        }
+        header.has-shown-menu {
+            transform: translateX(20vw);
+        }
+        header.has-shown-menu:after {
+            pointer-events: all;
+            opacity: 0.8;
+            z-index: -1;
+        }
+        header .navbar {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        header .navbar .navbar-brand {
+            float: none;
+        }
+        header .navbar .navbar-brand>img {
+            display: inline-block;
+        }
+        section {
+            position: relative;
+            width: 100vw;
+            max-width: 100%;
+        }
+        .landing {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+        .landing video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100vh;
+            width: auto;
+        }
+        .carousel-cell {
+            height: 100vh;
+            width: 60%;
+            margin-right: 5vw;
+        }
+        .pitch {
+            background-color: #8b161a;
+            height: 300px;
+        }
+        .pitch p {
+            color: #FFF;
+            padding: 20px 0;
+        }
+        .awards {
+            background-color: #8b161a;
+        }
+        p {
+            font-family: "Lato";
+        }
+        .omemmaen {
+            background-color: #8b161a;
+        }
+        .omemmaen p {
+            color: #FFF;
+            padding: 20px 0;
+        }
+        .menu-toggle {
+            width: 20px;
+            height: 20px;
+            border: none;
+            background-color: transparent;
+            text-align: center;
+            padding: 20px 50px;
+        }
+        .menu-toggle span {
+            height: 10px;
+            width: 60px;
+            display: block;
+            margin-bottom: 10px;
+            background-color: #8b161a;
+            transform: none;
+            transition: all 0.4s ease;
+        }
+        header .offcanvas a {
+            display: block;
+            padding: 15px 40px;
+            text-align: center;
+            font-size: inherit;
+        }
+        .has-shown-menu .menu-toggle span:nth-of-type(2) {
+            transform: translateY(20px) rotate(45deg);
+        }
+        .has-shown-menu .menu-toggle span:nth-of-type(3) {
+            transform: translateX(-100vw);
+        }
+        .has-shown-menu .menu-toggle span:nth-of-type(4) {
+            transform: translateY(-20px) rotate(-45deg);
+        }
+        .card {
+            background-color: #f0f0f0;
+        }
+        .rykned {
+            padding-top: 40px;
+        }
+        .some1 {
+            width: 50px;
+        }
+        .some2 {
+            width: 50px;
+        }
+        #infografik {
+            margin-left: 0px;
+        }
     }
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        background-color: #f0f0f0;
-    }
-    body {
-        width: 100vw;
-        margin: 0;
-    }
-    header {
-        transition: all 0.4s ease;
-        width: 100vw;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 99;
-    }
-    header:after {
-        content: " ";
-        display: block;
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: #000;
-        opacity: 0;
-        pointer-events: none;
-        transition: all 0.4s ease;
-    }
-    header .offcanvas {
-        position: fixed;
-        left: 0;
-        top: 0;
-        height: 100vh;
-        width: 20vw;
-        transform: translateX(-100%);
-        background-color: #f0f0f0;
-        z-index: 2;
-    }
-    header.has-shown-menu {
-        transform: translateX(20vw);
-    }
-    header.has-shown-menu:after {
-        pointer-events: all;
-        opacity: 0.8;
-        z-index: -1;
-    }
-    header .navbar {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0;
-    }
-    header .navbar .navbar-brand {
-        float: none;
-    }
-    header .navbar .navbar-brand>img {
-        display: inline-block;
-    }
-    section {
-        position: relative;
-        width: 100vw;
-        max-width: 100%;
-    }
-    .landing {
-        position: relative;
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
-    }
-    .landing video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 100vh;
-        width: auto;
-    }
-    .carousel-cell {
-        height: 50vh;
-        width: 60%;
-        margin-right: 5vw;
-    }
-    .pitch {
-        background-color: #8b161a;
-        height: 300px;
-    }
-    .pitch p {
-        color: #FFF;
-        padding: 20px 0;
-    }
-    .awards {
-        background-color: #8b161a;
-    }
-    p {
-        font-family: "Lato";
-    }
-    .omemmaen {
-        background-color: #8b161a;
-    }
-    .omemmaen p {
-        color: #FFF;
-        padding: 20px 0;
-    }
-    .menu-toggle {
-        width: 20px;
-        height: 20px;
-        border: none;
-        background-color: transparent;
-        text-align: center;
-        padding: 20px 50px;
-    }
-    .menu-toggle span {
-        height: 10px;
-        width: 60px;
-        display: block;
-        margin-bottom: 10px;
-        background-color: #8b161a;
-        transform: none;
-        transition: all 0.4s ease;
-    }
-    header .offcanvas a {
-        display: block;
-        padding: 15px 40px;
-        text-align: center;
-        font-size: inherit;
-    }
-    .has-shown-menu .menu-toggle span:nth-of-type(2) {
-        transform: translateY(20px) rotate(45deg);
-    }
-    .has-shown-menu .menu-toggle span:nth-of-type(3) {
-        transform: translateX(-100vw);
-    }
-    .has-shown-menu .menu-toggle span:nth-of-type(4) {
-        transform: translateY(-20px) rotate(-45deg);
-    }
-    .card {
-        background-color: #f0f0f0;
-    }
-    .rykned {
-        padding-top: 40px;
-    }
-    .some1 {
-        width: 50px;
-    }
-    .some2 {
-        width: 50px;
-    }
-    #infografik {
-        margin-left: 0px;
-    }
-}
