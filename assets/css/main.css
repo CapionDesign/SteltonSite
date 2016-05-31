@@ -196,15 +196,14 @@ section {
     .some2 {
         width: 50px;
     }
+    #infografik {
+        text-align: center;
+        margin-left: -250px;
+    }
 }
 
 @media all and (min-width: 768px) {
     .pitch p {
         padding: 30px;
     }
-}
-
-#infografik {
-    text-align: center;
-    margin-left: -250px;
 }
