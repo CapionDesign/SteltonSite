@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
     * {
   box-sizing: border-box;
 }
@@ -172,8 +172,8 @@ color: #FFF;
 
 
     .menulogo {
-       width: 250px;
-       padding-left: 47px;
+       width: 15vw;
+       padding-left: 2vw;
        padding-top: 15px;
         align-content: center;
        
