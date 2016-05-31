@@ -38,11 +38,13 @@ a {
 html, body {
   margin: 0;
   padding: 0;
+    background-color: #f0f0f0;
 }
 
 body {
   width: 100vw;
   margin: 0;
+
 }
 
 
@@ -78,11 +80,13 @@ header .offcanvas {
   transform: translateX(-100%);
   background-color: #FFF;
   z-index: 2;
+    background-color: #f0f0f0;
 }
 
 header .offcanvas a {
   display: block;
   padding: 5vw 25vw;
+    
 }
 
 header.has-shown-menu {
