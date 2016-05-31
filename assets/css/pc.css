@@ -199,7 +199,7 @@ color: #FFF;
     
     .some1 {
         width: 50px;
-        margin-left: -170px;
+        margin-left: -7vw;
         position: absolute;
         bottom: 3px;
         
@@ -208,7 +208,7 @@ color: #FFF;
     
     .some2 {
         width: 50px;
-        margin-left: -100px;
+        margin-left: -2vw;
         position: absolute;
         bottom: 0;
         
