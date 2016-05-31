@@ -38,11 +38,13 @@ a {
 html, body {
   margin: 0;
   padding: 0;
+    background-color: #f0f0f0;
 }
 
 body {
   width: 100vw;
   margin: 0;
+
 }
 
 
@@ -78,11 +80,13 @@ header .offcanvas {
   transform: translateX(-100%);
   background-color: #FFF;
   z-index: 2;
+    background-color: #f0f0f0;
 }
 
 header .offcanvas a {
   display: block;
-  padding: 4vw 8vw;
+  padding: 5vw 25vw;
+    
 }
 
 header.has-shown-menu {
@@ -184,8 +188,38 @@ section {
   transform: translateY(-2.5vw) rotate(-45deg);
 }
 
+.menulogo {
+       width: 40vw;
+        padding-left: 10vw;
+        padding-top: 3vw;
+      
+        align-content: center;
+       
+    }
+    
+ .navbar-brand>img {
+        width: 25vw;
+        padding-top: 20px;
+        float: right;
+        margin-right: 50px;
+        
+    }    
+    
+.some1 {
+    width: 15vw;
+    position: absolute;
+    margin-left: -10vw;
+    margin-top: 71vw;
+    }
+    
+.some2 {
+    width: 15vw;
+    position: absolute;
+    margin-left: 10vw;   
+    margin-top: 61vw;
+    }
 
-
+ 
 
 @media all and (min-width: 768px) {
   .pitch p {

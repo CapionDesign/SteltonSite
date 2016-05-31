@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
     * {
         box-sizing: border-box;
     }
@@ -162,14 +162,8 @@
     }
     .some1 {
         width: 50px;
-        /*margin-left: -170px;
-        position: absolute;
-        bottom: 3px;*/
     }
     .some2 {
         width: 50px;
-        /*margin-left: -100px;
-        position: absolute;
-        bottom: 0;*/
     }
 }
