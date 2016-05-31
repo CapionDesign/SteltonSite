@@ -5,16 +5,16 @@ $(document).ready(function () {
     var menuHammer = new Hammer($(this).get(0));
     menuHammer.on('swiperight swipeleft', function (event) {
         var curEle = event.target;
-        var targetIsSwipable = false;
+        var targetIsSwipable = true;
 
-        while (curEle.tagName != 'body') {
-            if (curEle.classList && curEle.classList.contains('swipable')); {
-                targetIsSwipable = true;
+        while (curEle.tagName.toLowerCase() != 'body') {
+            if (curEle.classList && curEle.classList.contains('is-swipable')) {
+                targetIsSwipable = false;
                 break;
             }
             curEle = curEle.parentNode;
-        }
-        if (!targetIsSwipable) {
+        };
+        if (targetIsSwipable) {
             var hideMenu = event.type == 'swipeleft';
             $('header').toggleClass('has-shown-menu', !hideMenu);
         }
