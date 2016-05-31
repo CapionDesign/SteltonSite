@@ -103,10 +103,6 @@
     .awards {
         background-color: #8b161a;
     }
-    .awards p {
-        color: #FFF;
-        padding: 20px 0;
-    }
     p {
         font-family: "Lato";
     }
@@ -171,5 +167,8 @@
         /*margin-left: -100px;
         position: absolute;
         bottom: 0;*/
+    }
+    #infografik {
+        text-align: center;
     }
 }
