@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-    /* Swipe instances */
+    /* Hammer JS */
     var menuHammer = new Hammer($(this).get(0));
     menuHammer.on('swiperight swipeleft', function (event) {
         var curEle = event.target;

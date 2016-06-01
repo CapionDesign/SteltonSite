@@ -159,7 +159,7 @@ section {
 }
 
 .awards {
-    background-color: #8b161a;
+    background-color: #f0f0f0;
 }
 
 .menu-toggle {
@@ -210,4 +210,10 @@ section {
     .pitch p {
         padding: 30px;
     }
+}
+
+.h2Header {
+    margin-top: 14vh;
+    font-size: 14px;
+    color: white;
 }
