@@ -80,7 +80,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
             height: 100vh;
-            width: auto;
         }
         .carousel-cell {
             height: 100vh;
@@ -161,5 +160,5 @@
         font-size: 28px;
         color: white;
         }
-        
+
     }
