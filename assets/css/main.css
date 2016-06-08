@@ -102,10 +102,10 @@ header.has-shown-menu:after {
 }
 
 .navbar-brand>img {
-    width: 300px;
+    width: 20vw;
     padding-top: 20px;
     float: right;
-    margin-right: 50px;
+    
 }
 
 header .navbar {
@@ -164,8 +164,8 @@ section {
 }
 
 .menu-toggle {
-    width: 16vw;
-    height: 16vw;
+    width: 12vw;
+    height: 12vw;
     border: none;
     background-color: transparent;
     text-align: center;
