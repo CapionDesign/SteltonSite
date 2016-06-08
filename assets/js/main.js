@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    var video = document.getElementById('video');
+      video.addEventListener('load',function(){
+      video.play();
+    },false);
 
     /* Hammer JS */
     var menuHammer = new Hammer($(this).get(0));
